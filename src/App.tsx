@@ -119,7 +119,7 @@ export default function App() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", `https://muttakiadnan.com${currentPath}`);
+    canonical.setAttribute("href", `https://muttakiadnan.netlify.app${currentPath}`);
   }, [currentPath]);
 
   // Router dispatcher

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://muttakiadnan.com/sitemap.xml
+Sitemap: https://muttakiadnan.netlify.app/sitemap.xml
