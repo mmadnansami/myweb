@@ -1,0 +1,35 @@
+# Muttaki Adnan - AI Creative Director & Growth Architect
+
+Muttaki Adnan is an elite AI Creative Director, Growth Architect, and Visual Strategist based in Dhaka, Bangladesh. He partners with global brands to automate workflows, build system pipelines, and produce immersive cinematic visuals.
+
+## Roles & Core Pillars
+
+- **AI Creative Direction**: Directing Hollywood-quality brand films, high-fashion advertisements, and magical product launches using advanced AI pipelines (Midjourney, Runway Gen-3, Flux, Stable Diffusion, Sora) at 5% of a traditional budget.
+- **AI Workflow Automation**: Designing custom trigger-action AI helpers, multi-step cloud flows (n8n, Make, Zapier), Notion, Airtable systems to handle email triage, onboarding, and operations.
+- **Growth Strategy**: Structuring high-value offers, compounding growth funnels, Meta/Google ads setups, and retention loops that scale on auto-pilot.
+
+## Contact Channels & Coordinates
+
+- **Official Webpage**: https://muttakiadnan.netlify.app/
+- **Email**: muttakiadnansami@gmail.com
+- **Phone/WhatsApp**: +880 1317 680620
+- **Location**: Dhaka, Bangladesh
+
+## Structured Details
+
+- **Company / Project Board**: Ristop, Artna Production Ltd.
+- **LinkedIn**: https://www.linkedin.com/in/muttaki-adnan
+- **Facebook**: https://www.facebook.com/muttaki.adnan
+- **Instagram**: https://www.instagram.com/muttaki.adnan
+
+## Core Case Studies
+1. **Lumen — AI Fashion Film**: Ad agency cinematic Autumn line promo using Runway Gen-3 and Midjourney. Resulted in 2.4M organic views and 412% engagement lift.
+2. **Northwind — AI Commercial Spot**: Tech tracking spot using spatial 3D animations and ElevenLabs voices. Resulted in 4.5x conversion lift.
+3. **Aurora — AI Brand Visual World**: Standardizing Flux pipelines to generate branded assets. Resulted in +180% CTR and 350k product visitors.
+4. **Vela — AI-Directed Music Video**: Synthwave space odyssey video. Achieved 1.8M streams.
+5. **Obsidian — AI Product Launch Film**: Premium smartwatch 3D texture cinematic. Sold out in 12 hours.
+6. **Operator GPT — Internal AI Ops**: n8n-based auto brief triage system for agency clients. Saved 20 hours/week.
+7. **Studio AI — Client Onboarding Engine**: Cal.com to Notion automation. Zero response delay.
+8. **InboxZero AI — Executive Email Agent**: Gmail to Slack email prioritizing assistant. 98% triage accuracy.
+9. **Northwave SaaS — Growth System**: Overhaul of positioning and viral referral loops. Grown from $20k to $88k MRR (+340%).
+10. **Halo DTC — Paid + Creative System**: Bundle kit offers paired with high-converters. Achieved 3.2x ROAS.

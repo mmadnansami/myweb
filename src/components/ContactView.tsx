@@ -13,7 +13,8 @@ import {
   User as UserIcon,
   MessageSquareCode,
   ShieldCheck,
-  Globe
+  Globe,
+  MapPin
 } from "lucide-react";
 import { auth, signInWithGoogle, logout, addGuestbookMessage, getGuestbookMessages, GuestbookMessage } from "../lib/firebase";
 import { onAuthStateChanged, User } from "firebase/auth";
@@ -264,6 +265,20 @@ ${quickName}`;
                   <span className="text-sm font-semibold text-zinc-200 block group-hover:text-white">+880 1317 680620</span>
                 </div>
               </a>
+
+              {/* Office Address Location item */}
+              <div 
+                id="direct-channel-location"
+                className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900/40 border border-zinc-800 hover:border-pink-500/50 transition-all group"
+              >
+                <div className="w-10 h-10 rounded-lg bg-pink-500/10 flex items-center justify-center text-pink-400 shrink-0 group-hover:scale-105 transition-transform">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-[10px] font-mono text-zinc-500 uppercase">OFFICE ADDRESS</span>
+                  <span className="text-sm font-semibold text-zinc-200 block group-hover:text-white">Dhaka, Bangladesh</span>
+                </div>
+              </div>
             </div>
 
             <div className="pt-4 border-t border-zinc-900 flex items-center justify-between text-xs font-mono text-zinc-500">

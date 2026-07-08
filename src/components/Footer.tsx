@@ -5,7 +5,8 @@ import {
   Mail, 
   Phone, 
   ArrowUpRight, 
-  Sparkles 
+  Sparkles,
+  MapPin
 } from "lucide-react";
 
 interface FooterProps {
@@ -127,6 +128,10 @@ export default function Footer({ navigate }: FooterProps) {
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span>+880 1317 680620</span>
               </a>
+              <div className="text-sm text-zinc-400 flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-blue-400 shrink-0" />
+                <span>Dhaka, Bangladesh</span>
+              </div>
               <div className="text-xs font-mono text-zinc-500 pt-1">
                 Response Time: <span className="text-zinc-300 font-semibold">&lt; 24 Hours</span>
               </div>
