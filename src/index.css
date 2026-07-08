@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Delight Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Syne ExtraBold'), local('Syne-ExtraBold'), url('https://fonts.gstatic.com/s/syne/v22/8v0fQ076e-G60-24N8N_P1Y.woff2') format('woff2');
+}
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Delight Bold", "Syne", "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-dark-bg: #020308;
+  --color-glass-card: rgba(255, 255, 255, 0.05);
+  --color-accent-purple: #c084fc;
+  --color-accent-blue: #60a5fa;
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(2, 3, 8, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-nav {
+    background: rgba(2, 3, 8, 0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 20px 40px -15px rgba(168, 85, 247, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.12);
+  }
+
+  .glass-input {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+    backdrop-filter: blur(8px);
+    transition: all 0.25s ease;
+  }
+
+  .glass-input:focus {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(168, 85, 247, 0.5);
+    outline: none;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+  }
+  
+  .glow-purple {
+    box-shadow: 0 0 40px -5px rgba(168, 85, 247, 0.15);
+  }
+
+  .mouse-spotlight {
+    background: radial-gradient(
+      600px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
+      rgba(168, 85, 247, 0.08),
+      transparent 80%
+    );
+  }
+
+  /* Immersive UI premium background arc and glows from mockup screenshots */
+  .neon-glow-arc {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, rgba(59, 130, 246, 0.08) 50%, transparent 100%);
+    border-radius: 50% / 100% 100% 0 0;
+    border-top: 1px solid rgba(168, 85, 247, 0.4);
+    filter: blur(1px);
+    box-shadow: 0 -15px 60px -10px rgba(168, 85, 247, 0.4), 0 -8px 30px -5px rgba(59, 130, 246, 0.2);
+    pointer-events: none;
+    z-index: 1;
+    animation: glow-pulse-animation 8s ease-in-out infinite alternate;
+  }
+
+  @media (min-width: 768px) {
+    .neon-glow-arc {
+      width: 1000px;
+      height: 420px;
+      top: -150px;
+      border-top: 2px solid rgba(168, 85, 247, 0.5);
+      box-shadow: 0 -25px 100px -15px rgba(168, 85, 247, 0.5), 0 -12px 50px -8px rgba(59, 130, 246, 0.3);
+    }
+  }
+
+  @keyframes glow-pulse-animation {
+    0% {
+      opacity: 0.85;
+      transform: translateX(-50%) scale(0.98);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%) scale(1.02);
+    }
+  }
+}
+
+/* Custom scrollbar to match black glass theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020308;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+body {
+  background-color: #020308;
+  color: #f4f4f5;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}

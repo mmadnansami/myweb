@@ -1,0 +1,6 @@
+{
+  "name": "Muttaki Adnan Portfolio",
+  "description": "AI Creative Director, Growth Architect & Visual Strategist portfolio featuring cinematic AI projects, business automations, and growth systems.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
