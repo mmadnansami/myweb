@@ -1,23 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!-- Static Routes -->
   <url>
     <loc>https://muttakiadnan.netlify.app/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/lumen-ai-fashion-film.jpg</image:loc>
+      <image:title>Muttaki Adnan - AI Creative Director &amp; Growth Architect</image:title>
+      <image:caption>Premium AI Creative Direction and Workflow Automation systems portfolio by Muttaki Adnan in Dhaka, Bangladesh</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/services</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/operator-gpt-internal-ai-ops.jpg</image:loc>
+      <image:title>Muttaki Adnan Advanced AI Services &amp; Workflow Automation</image:title>
+      <image:caption>Muttaki Adnan provides enterprise AI automation systems and high-end creative direction</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/portfolio</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/lumen-ai-fashion-film.jpg</image:loc>
+      <image:title>Immersive Cinematic AI &amp; Systems Portfolio by Muttaki Adnan</image:title>
+      <image:caption>A showcase of cinematic brand films, automated pipelines, and conversion growth models</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/tools</loc>
@@ -30,6 +46,11 @@
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/studio-ai-client-onboarding-engine.jpg</image:loc>
+      <image:title>About Muttaki Adnan - Founder of Ristop</image:title>
+      <image:caption>About Muttaki Adnan, founder of Ristop and Artna Production Ltd, based in Dhaka, Bangladesh</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/blog</loc>
@@ -44,66 +65,116 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Case Studies -->
+  <!-- Case Studies with Google Image Sitemap Tags -->
   <url>
     <loc>https://muttakiadnan.netlify.app/portfolio/lumen-ai-fashion-film</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/lumen-ai-fashion-film.jpg</image:loc>
+      <image:title>Lumen — AI Fashion Film Cinematic Keyframe by Muttaki Adnan</image:title>
+      <image:caption>Lumen AI Fashion Film conceptual design created using Midjourney and Runway Gen-3 by Muttaki Adnan</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/portfolio/northwind-ai-commercial-spot</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/northwind-ai-commercial-spot.jpg</image:loc>
+      <image:title>Northwind — AI Commercial Network Visualization by Muttaki Adnan</image:title>
+      <image:caption>Sci-fi futuristic global server tracking commercial visualization designed by Muttaki Adnan</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/portfolio/aurora-ai-brand-visual-world</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/aurora-ai-brand-visual-world.jpg</image:loc>
+      <image:title>Aurora — AI Brand Visual World and Assets by Muttaki Adnan</image:title>
+      <image:caption>Custom cosmic lightings and branded product assets designed with Flux and Stable Diffusion by Muttaki Adnan</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/portfolio/vela-ai-directed-music-video</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/vela-ai-directed-music-video.jpg</image:loc>
+      <image:title>Vela — AI-Directed Space Odyssey Music Video by Muttaki Adnan</image:title>
+      <image:caption>Neon retro-futuristic synthwave space journey visualization designed by Muttaki Adnan</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/portfolio/obsidian-ai-product-launch-film</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/obsidian-ai-product-launch-film.jpg</image:loc>
+      <image:title>Obsidian — Premium AI Smartwatch Cinematic Shot by Muttaki Adnan</image:title>
+      <image:caption>Hyper-detailed flowing obsidian glass and metallic smartwatch showcase designed by Muttaki Adnan</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/portfolio/operator-gpt-internal-ai-ops</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/operator-gpt-internal-ai-ops.jpg</image:loc>
+      <image:title>Operator GPT — Automated AI Operations Workflow by Muttaki Adnan</image:title>
+      <image:caption>System architecture and logical workflow diagram for document parsing and Slack routing by Muttaki Adnan</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/portfolio/studio-ai-client-onboarding-engine</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/studio-ai-client-onboarding-engine.jpg</image:loc>
+      <image:title>Studio AI — Client Onboarding Database Pipeline by Muttaki Adnan</image:title>
+      <image:caption>Notion, Make, and Cal.com automated qualification checking system pipeline designed by Muttaki Adnan</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/portfolio/inboxzero-ai-executive-email-agent</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/inboxzero-ai-executive-email-agent.jpg</image:loc>
+      <image:title>InboxZero AI — Executive Automated Email Triage Hub by Muttaki Adnan</image:title>
+      <image:caption>Gmail automation triggers and GPT-4o email prioritizing workflow designed by Muttaki Adnan</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/portfolio/northwave-saas-growth-system</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/northwave-saas-growth-system.jpg</image:loc>
+      <image:title>Northwave — SaaS Growth Strategy Performance Metrics by Muttaki Adnan</image:title>
+      <image:caption>Growth loops, marketing funnels, and positioning dashboard audit designed by Muttaki Adnan</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://muttakiadnan.netlify.app/portfolio/halo-dtc-paid-creative-system</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://muttakiadnan.netlify.app/images/halo-dtc-paid-creative-system.jpg</image:loc>
+      <image:title>Halo DTC — Paid Ads Creative Content Optimization by Muttaki Adnan</image:title>
+      <image:caption>Meta and Google ad creative scaling and high-converting funnel setups designed by Muttaki Adnan</image:caption>
+    </image:image>
   </url>
 
   <!-- Blog Articles -->
