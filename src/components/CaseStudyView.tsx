@@ -106,7 +106,7 @@ export default function CaseStudyView({ projectId, navigate }: CaseStudyViewProp
         <a 
           href={project.image} 
           target="_blank" 
-          rel="noopener noreferrer" 
+          rel="noopener noreferrer nofollow" 
           title={`${project.title} - AI Creative Work Splash`}
           className="block w-full h-full"
         >
@@ -292,7 +292,7 @@ export default function CaseStudyView({ projectId, navigate }: CaseStudyViewProp
                   key={idx}
                   href={shot}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   title={`Key Shot ${idx + 1} for ${project.title}`}
                   onClick={(e) => {
                     e.preventDefault();

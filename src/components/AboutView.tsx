@@ -37,7 +37,7 @@ export default function AboutView({ navigate, portraitPath }: AboutViewProps) {
             <a 
               href="https://i.ibb.co.com/vx4Jx1q1/screen.png" 
               target="_blank" 
-              rel="noopener noreferrer" 
+              rel="noopener noreferrer nofollow" 
               title="Muttaki Adnan - Founder, Creative Director Profile Image"
               className="relative group block"
             >

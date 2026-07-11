@@ -43,6 +43,15 @@ export default function Footer({ navigate }: FooterProps) {
       name: "Instagram", 
       icon: <Instagram className="w-5 h-5" />, 
       url: "https://instagram.com/muttakiadnan" 
+    },
+    {
+      name: "X",
+      icon: (
+        <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      ),
+      url: "https://x.com/muttaki_adnan"
     }
   ];
 
@@ -121,12 +130,16 @@ export default function Footer({ navigate }: FooterProps) {
               <span className="hidden" itemProp="name">Muttaki Adnan | AI Creative Systems</span>
               <a
                 id="footer-contact-email"
-                href="mailto:muttakiadnansami@gmail.com"
-                className="text-sm text-zinc-400 hover:text-white transition-colors flex items-center gap-2"
+                href="#email"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = ["mailto:", "muttakiadnansami", "@", "gmail.com"].join("");
+                }}
+                className="text-sm text-zinc-400 hover:text-white transition-colors flex items-center gap-2 cursor-pointer"
                 itemProp="email"
               >
                 <Mail className="w-4 h-4 text-purple-400 shrink-0" />
-                <span>muttakiadnansami@gmail.com</span>
+                <span>muttakiadnansami<span>&#64;</span>gmail.com</span>
               </a>
               <a
                 id="footer-contact-phone"
@@ -193,7 +206,7 @@ export default function Footer({ navigate }: FooterProps) {
                 key={social.name}
                 href={social.url}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="p-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-400 hover:text-white transition-all duration-200 hover:scale-105"
                 aria-label={social.name}
               >

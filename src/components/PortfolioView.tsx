@@ -96,7 +96,7 @@ export default function PortfolioView({ navigate }: PortfolioViewProps) {
                 <a 
                   href={project.image} 
                   target="_blank" 
-                  rel="noopener noreferrer" 
+                  rel="noopener noreferrer nofollow" 
                   title={`${project.title} - AI Project Cover`}
                   onClick={(e) => e.stopPropagation()}
                   className="block w-full h-full"

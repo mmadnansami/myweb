@@ -308,7 +308,7 @@ export default function AIAssistant() {
         ...prev,
         { 
           role: "model", 
-          content: "I'm having a small trouble connecting to my brain server right now. Muttaki is based in Bangladesh and is an AI Creative Director. You can contact him directly at muttakiadnansami@gmail.com or via WhatsApp at +880 1317 680620!" 
+          content: "I'm having a small trouble connecting to my brain server right now. Muttaki is based in Bangladesh and is an AI Creative Director. You can contact him directly at muttakiadnansami [at] gmail [dot] com or via WhatsApp at +880 1317 680620!" 
         }
       ]);
     } finally {
@@ -530,7 +530,7 @@ export default function AIAssistant() {
                                     key={sIdx}
                                     href={source.uri}
                                     target="_blank"
-                                    rel="noopener noreferrer"
+                                    rel="noopener noreferrer nofollow"
                                     className="flex items-center gap-1 text-purple-400 hover:text-purple-300 hover:underline transition-colors leading-tight"
                                   >
                                     <span className="line-clamp-1 text-left">{source.title || source.uri}</span>

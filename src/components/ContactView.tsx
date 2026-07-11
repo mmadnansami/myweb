@@ -102,7 +102,9 @@ export default function ContactView() {
   const [quickSubmitted, setQuickSubmitted] = useState(false);
 
   // Constants
-  const CONTACT_EMAIL = "muttakiadnansami@gmail.com";
+  const emailUser = "muttakiadnansami";
+  const emailDomain = "gmail.com";
+  const CONTACT_EMAIL = `${emailUser}@${emailDomain}`;
   const CONTACT_WHATSAPP = "+8801317680620";
 
   // Handle Book a Meeting - Email Route
@@ -222,15 +224,21 @@ ${quickName}`;
               {/* Email item */}
               <a 
                 id="direct-channel-email"
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900/40 border border-zinc-800 hover:border-purple-500/50 transition-all group"
+                href="#email"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = ["mailto:", "muttakiadnansami", "@", "gmail.com"].join("");
+                }}
+                className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900/40 border border-zinc-800 hover:border-purple-500/50 transition-all group cursor-pointer"
               >
                 <div className="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 shrink-0 group-hover:scale-105 transition-transform">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="text-[10px] font-mono text-zinc-500 uppercase">OFFICIAL EMAIL</span>
-                  <span className="text-sm font-semibold text-zinc-200 block truncate group-hover:text-white">{CONTACT_EMAIL}</span>
+                  <span className="text-sm font-semibold text-zinc-200 block truncate group-hover:text-white">
+                    muttakiadnansami<span>&#64;</span>gmail.com
+                  </span>
                 </div>
               </a>
 
@@ -239,7 +247,7 @@ ${quickName}`;
                 id="direct-channel-whatsapp"
                 href={`https://wa.me/8801317680620`}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900/40 border border-zinc-800 hover:border-emerald-500/50 transition-all group"
               >
                 <div className="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 shrink-0 group-hover:scale-105 transition-transform">

@@ -83,8 +83,12 @@ export default function BlogView() {
           </div>
           <a
             id="blog-post-subscribe-cta"
-            href="mailto:muttakiadnansami@gmail.com?subject=Subscribe to Blog"
-            className="px-5 py-2.5 rounded-xl bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-zinc-100 transition-colors flex items-center gap-2"
+            href="#subscribe"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = ["mailto:", "muttakiadnansami", "@", "gmail.com", "?subject=Subscribe to Blog"].join("");
+            }}
+            className="px-5 py-2.5 rounded-xl bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-zinc-100 transition-colors flex items-center gap-2 cursor-pointer"
           >
             <Mail className="w-4 h-4" />
             Join Newsletter

@@ -169,7 +169,7 @@ export default function HomeView({ navigate, portraitPath, heroBgPath }: HomeVie
             <a 
               href="https://i.ibb.co.com/vx4Jx1q1/screen.png" 
               target="_blank" 
-              rel="noopener noreferrer" 
+              rel="noopener noreferrer nofollow" 
               title="Muttaki Adnan - AI Creative Director, Growth Architect & Visual Strategist"
               className="relative group block"
             >
@@ -356,7 +356,7 @@ export default function HomeView({ navigate, portraitPath, heroBgPath }: HomeVie
                 <a 
                   href={project.image} 
                   target="_blank" 
-                  rel="noopener noreferrer" 
+                  rel="noopener noreferrer nofollow" 
                   title={`${project.title} - AI Creative Project Cover`}
                   onClick={(e) => e.stopPropagation()}
                   className="block w-full h-full"
