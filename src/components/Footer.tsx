@@ -70,14 +70,18 @@ export default function Footer({ navigate }: FooterProps) {
             <ul className="space-y-2.5">
               {quickLinks.map((link) => (
                 <li key={link.path}>
-                  <button
+                  <a
                     id={`footer-link-${link.name.toLowerCase()}`}
-                    onClick={() => navigate(link.path)}
+                    href={link.path}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate(link.path);
+                    }}
                     className="text-sm text-zinc-400 hover:text-white transition-colors flex items-center gap-1 group cursor-pointer"
                   >
                     {link.name}
                     <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity text-purple-400" />
-                  </button>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -91,14 +95,18 @@ export default function Footer({ navigate }: FooterProps) {
             <ul className="space-y-2.5">
               {secondaryLinks.map((link) => (
                 <li key={link.path}>
-                  <button
+                  <a
                     id={`footer-secondary-link-${link.name.toLowerCase().replace(" ", "-")}`}
-                    onClick={() => navigate(link.path)}
+                    href={link.path}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate(link.path);
+                    }}
                     className="text-sm text-zinc-400 hover:text-white transition-colors flex items-center gap-1 group cursor-pointer"
                   >
                     {link.name}
                     <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity text-blue-400" />
-                  </button>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -109,28 +117,36 @@ export default function Footer({ navigate }: FooterProps) {
             <span className="text-xs font-mono tracking-widest text-zinc-500 uppercase font-semibold">
               GET IN TOUCH
             </span>
-            <div className="space-y-3">
+            <div className="space-y-3" itemScope itemType="https://schema.org/ProfessionalService">
+              <span className="hidden" itemProp="name">Muttaki Adnan | AI Creative Systems</span>
               <a
                 id="footer-contact-email"
                 href="mailto:muttakiadnansami@gmail.com"
                 className="text-sm text-zinc-400 hover:text-white transition-colors flex items-center gap-2"
+                itemProp="email"
               >
                 <Mail className="w-4 h-4 text-purple-400 shrink-0" />
                 <span>muttakiadnansami@gmail.com</span>
               </a>
               <a
-                id="footer-contact-whatsapp"
-                href="https://wa.me/8801317680620"
-                target="_blank"
-                rel="noopener noreferrer"
+                id="footer-contact-phone"
+                href="tel:+8801317680620"
                 className="text-sm text-zinc-400 hover:text-white transition-colors flex items-center gap-2"
+                itemProp="telephone"
               >
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span>+880 1317 680620</span>
               </a>
-              <div className="text-sm text-zinc-400 flex items-center gap-2">
+              <div 
+                className="text-sm text-zinc-400 flex items-center gap-2"
+                itemProp="address" 
+                itemScope 
+                itemType="https://schema.org/PostalAddress"
+              >
                 <MapPin className="w-4 h-4 text-blue-400 shrink-0" />
-                <span>Dhaka, Bangladesh</span>
+                <span>
+                  <span itemProp="streetAddress">Dhaka</span>, <span itemProp="addressLocality">Dhaka</span>, <span itemProp="addressCountry">BD</span>
+                </span>
               </div>
               <div className="text-xs font-mono text-zinc-500 pt-1">
                 Response Time: <span className="text-zinc-300 font-semibold">&lt; 24 Hours</span>

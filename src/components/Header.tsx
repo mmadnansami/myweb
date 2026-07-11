@@ -114,10 +114,14 @@ export default function Header({ currentPath, navigate }: HeaderProps) {
             {navLinks.map((link) => {
               const isActive = currentPath === link.path || (link.path !== "/" && currentPath.startsWith(link.path));
               return (
-                <button
+                <a
                   id={`nav-link-${link.name.toLowerCase().replace(" ", "-")}`}
                   key={link.path}
-                  onClick={() => handleNavClick(link.path)}
+                  href={link.path}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(link.path);
+                  }}
                   className={`px-4 py-2 rounded-lg font-sans text-sm font-medium transition-all duration-200 cursor-pointer ${
                     isActive 
                       ? "bg-white/10 text-white shadow-sm" 
@@ -125,7 +129,7 @@ export default function Header({ currentPath, navigate }: HeaderProps) {
                   }`}
                 >
                   {link.name}
-                </button>
+                </a>
               );
             })}
           </nav>
@@ -233,18 +237,22 @@ export default function Header({ currentPath, navigate }: HeaderProps) {
                 {navLinks.map((link) => {
                   const isActive = currentPath === link.path || (link.path !== "/" && currentPath.startsWith(link.path));
                   return (
-                    <button
+                    <a
                       id={`mobile-nav-${link.name.toLowerCase().replace(" ", "-")}`}
                       key={link.path}
-                      onClick={() => handleNavClick(link.path)}
-                      className={`text-left px-4 py-3 rounded-xl font-sans text-sm font-medium transition-colors ${
+                      href={link.path}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleNavClick(link.path);
+                      }}
+                      className={`text-left block px-4 py-3 rounded-xl font-sans text-sm font-medium transition-colors ${
                         isActive 
                           ? "bg-white/10 text-white" 
                           : "text-zinc-400 hover:text-white hover:bg-white/5"
                       }`}
                     >
                       {link.name}
-                    </button>
+                    </a>
                   );
                 })}
               </div>
